@@ -1,0 +1,16 @@
+package exo3;
+
+import java.util.Random;
+
+public class MainExo3 {
+	public static void main(String[] args) {
+
+		//System.out.print(Math.PI);
+
+		Random r = new Random();
+        int n = r.nextInt(5);
+        System.out.println(n);
+		
+		
+	}
+}

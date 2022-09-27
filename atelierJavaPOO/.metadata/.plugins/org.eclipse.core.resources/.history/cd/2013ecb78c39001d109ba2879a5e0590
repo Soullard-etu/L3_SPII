@@ -1,0 +1,19 @@
+package exo3;
+
+import java.util.Random;
+
+public class MainExo3 {
+	public static void main(String[] args) {
+
+		System.out.println(Math.PI);
+
+		Random r = new Random();
+        double n = r.nextDouble(1);
+        System.out.println(n);
+		
+        Random j = new Random();
+        int in = j.nextInt(1, 3);
+        System.out.println(in);
+		
+	}
+}

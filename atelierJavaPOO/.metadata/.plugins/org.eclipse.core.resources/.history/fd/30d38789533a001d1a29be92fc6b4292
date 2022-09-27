@@ -1,0 +1,37 @@
+package exo1;
+
+public class De {
+	private String nom;
+	private int nbrFaces;	//min=3 max=120
+	
+	public De(int nbrFaces) {
+		this.nom = "De";
+		this.nbrFaces = nbrFaces;
+	}
+
+	public De(String nom) {
+		this.nom = nom;
+		this.nbrFaces = 6;
+	}
+	
+	public De() {
+		this.nom = "De";
+		this.nbrFaces = 6;
+	}
+
+	public int getNbrFaces() {
+		return nbrFaces;
+	}
+	
+	public void setNbrFaces(int nbrFaces) {
+		if((nbrFaces <= 120) && (nbrFaces >= 3)) 
+			this.nbrFaces = nbrFaces;
+			
+		else 
+			System.out.println("Hors des limite");
+	}
+
+	public String getNom() {
+		return nom;
+	}
+}

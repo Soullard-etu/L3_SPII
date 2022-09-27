@@ -1,0 +1,20 @@
+package exo1;
+
+import java.util.Random;
+
+public class DeMemoire extends De {
+	private int dernierLancer;
+	
+	public int lancer() {
+		Random r = new Random();
+		int res = r.nextInt(this.nbrFaces)+1 ;
+		
+		while(dernierLancer == res) {
+			res = r.nextInt(this.nbrFaces)+1 ;
+		}
+		
+		dernierLancer = res;
+		
+		return res;
+	}
+}

@@ -1,0 +1,10 @@
+package exo2;
+
+public class Vecteur3D {
+	private
+		int x;
+		int y;
+		int z;
+		
+
+}

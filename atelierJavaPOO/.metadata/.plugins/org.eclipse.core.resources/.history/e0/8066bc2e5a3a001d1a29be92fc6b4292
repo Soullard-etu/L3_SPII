@@ -1,0 +1,19 @@
+package exo1;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class DeMemoire extends De {
+	private ArrayList<Integer> tabHistorique;
+	
+	public int lancer() {
+		Random r = new Random();
+		int res = r.nextInt(this.nbrFaces+1) ;
+		
+		while(tabHistorique.contains(res)) {
+			res = r.nextInt(this.nbrFaces+1) ;
+		}
+		tabHistorique.add(res);
+		return res;
+	}
+}

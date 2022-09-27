@@ -1,0 +1,20 @@
+package exo1;
+
+public class MainExo1 {
+
+	public static void main(String[] args) {
+		Personne p1 = new Personne("DuBois", "Tom", 5, 3, 2001, 14, "ici", "20230", "Taglio");
+		Personne p2 = new Personne("DuBois", "Tom", 5, 3, 2000, 14, "ici", "20230", "Taglio");
+		System.out.println(p1);
+		System.out.println(p2);
+		
+		if(Personne.plusAgee(p1,p2))
+			System.out.println("p1 est plus vieu que p2");
+		else
+			System.out.println("p1 n'est pas plus vieu que p2");
+
+		if(p1.plusAgee(p2))
+			System.out.println("p1 est plus vieu que p2");
+	}
+
+}

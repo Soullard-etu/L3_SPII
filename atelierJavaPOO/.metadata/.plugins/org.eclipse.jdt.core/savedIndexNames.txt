@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\ange-\Desktop\L3 SPII\atelierJavaPOO\.metadata\.plugins\org.eclipse.jdt.core
+2826160603.index
+830117985.index
+1865797976.index
+3748985165.index
+3011209426.index

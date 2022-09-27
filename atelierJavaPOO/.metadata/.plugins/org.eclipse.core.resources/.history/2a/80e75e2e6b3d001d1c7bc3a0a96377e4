@@ -1,0 +1,77 @@
+package exo1;
+
+import java.util.Random;
+
+public class De {
+	private String nom;
+	int nbrFaces;	//min=3 max=120
+	private static int nbrDe = 0;
+	
+	public De(String nom, int nbrFaces) {
+		this.nom = nom;
+		this.nbrFaces = nbrFaces;
+		nbrDe++;
+	}
+
+	public De(int nbrFaces) {
+		this.nom = "De n°" + nbrDe;
+		this.nbrFaces = nbrFaces;
+		nbrDe ++;
+	}
+
+	public De(String nom) {
+		this.nom = nom;
+		this.nbrFaces = 6;
+		nbrDe ++;
+	}
+	
+	public De() {
+		this.nom = "De n°" + nbrDe;
+		this.nbrFaces = 6;
+		nbrDe ++;
+	}
+
+	public int getNbrFaces() {
+		return nbrFaces;
+	}
+	
+	public void setNbrFaces(int nbrFaces) {
+		if((nbrFaces <= 120) && (nbrFaces >= 3)) 
+			this.nbrFaces = nbrFaces;
+			
+		else 
+			System.out.println("Hors des limite");
+	}
+
+	public String getNom() {
+		return nom;
+	}
+	
+	public int lancer() {
+		Random r = new Random();
+		return r.nextInt(this.nbrFaces) + 1;
+	}
+	
+	public int lancer(int nb) {
+		int res=0;
+		int test=0;
+		Random r = new Random();
+		for (int i=0; i < nb; i++) {
+			test = r.nextInt(this.nbrFaces) + 1;
+			if(res < test)
+				res = test;
+		}
+		return res;
+	}
+
+	public String toString() {
+		return "De [nom=" + nom + ", nbrFaces=" + nbrFaces + "]";
+	}
+	
+	public boolean equals(De anotherObject) {
+		boolean res = false;
+		if ((this.nom == anotherObject.nom) && (this.nbrFaces == anotherObject.nbrFaces))
+			res = true;
+		return res;  //true si De equal
+	}
+}

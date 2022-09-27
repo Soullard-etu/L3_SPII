@@ -1,0 +1,25 @@
+orienter conseption
+
+cours:15h
+td:6h
+tp:6h
+
+conseption
+implantation
+utilisation
+maintenance
+
+
+
+
+
+
+
+
+
+exposer
+en binome
+sur un  theme en rapors avec les bdd
+powerpoint
+
+"oracle"

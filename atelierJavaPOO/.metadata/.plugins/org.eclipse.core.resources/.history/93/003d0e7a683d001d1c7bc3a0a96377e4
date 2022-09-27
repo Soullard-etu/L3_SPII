@@ -1,0 +1,29 @@
+package exo2;
+
+public class Entier {
+	private int borneMin;
+	private int borneMax;
+	private int lentier;
+	
+	public Entier(int borneMin, int borneMax) {
+		this.borneMin = borneMin;
+		this.borneMax = borneMax;
+		lentier=0;
+	}
+
+	public void setLentier(int lentier) {
+		if(lentier>=this.borneMin && lentier <= this.borneMax)
+				this.lentier = lentier;
+	}
+	
+	public void increment() {
+		this.setLentier(lentier+1);
+	}
+
+	public String toString() {
+		return this.lentier;
+	}
+	
+	
+	
+}

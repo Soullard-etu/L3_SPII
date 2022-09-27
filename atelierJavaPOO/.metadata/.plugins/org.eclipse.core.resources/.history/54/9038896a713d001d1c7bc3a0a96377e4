@@ -1,0 +1,10 @@
+package exo1;
+
+public class MainExo1 {
+
+	public static void main(String[] args) {
+		Personne p1 = new("DuBois", "Tom", 5, 3, 2001, 14, "rue", "20230", "Taglio");
+
+	}
+
+}

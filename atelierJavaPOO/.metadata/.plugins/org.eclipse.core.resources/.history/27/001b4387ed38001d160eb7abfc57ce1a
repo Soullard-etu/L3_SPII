@@ -1,0 +1,11 @@
+package exo2;
+
+public class MainEx2 {
+
+	public static void main(String[] args) {
+		Vecteur3D t = new Vecteur3D();
+		
+		System.out.println(t);
+	}
+
+}

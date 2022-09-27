@@ -1,0 +1,19 @@
+package exo1;
+
+public class RobotMain {
+	
+
+	public static void main(String[] args) {
+
+		Robot Toto = new Robot("Toto", 10, 10, 3);
+		Robot Titi = new Robot("Titi", 0, 0);
+				
+		Toto.afficheToi();
+		System.out.print("\n");
+		Titi.afficheToi();
+		
+		System.out.println(Toto);
+		
+	}
+
+}

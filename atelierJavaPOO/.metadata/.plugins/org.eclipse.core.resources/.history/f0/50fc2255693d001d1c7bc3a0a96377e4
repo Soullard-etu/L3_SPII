@@ -1,0 +1,12 @@
+package exo2;
+
+public class EntierFou extends Entier{
+	private int niveauDeFolie;
+
+	public EntierFou(int borneMin, int borneMax, int niveauDeFolie) {
+		super(borneMin, borneMax);
+		this.niveauDeFolie = niveauDeFolie;
+	}
+	
+	
+}
